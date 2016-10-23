@@ -1,0 +1,19 @@
+
+header {
+
+  position: relative;
+}
+
+
+img.hero {
+  opacity: 0.5;
+  height: 100%;
+}
+
+.ps {
+  position:absolute;
+bottom: 0;
+left: 0;
+
+
+}
