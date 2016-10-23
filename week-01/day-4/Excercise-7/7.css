@@ -1,0 +1,42 @@
+
+p {
+font-size: 18px;
+padding:20px 15px 20px 15px;
+margin: 0 490px 0 490px;
+border-left: 3px solid;
+border-right: 3px solid;
+border-top: 3px solid;
+
+}
+
+h1 {
+  text-align: center;
+}
+div {
+  font-size: 18px;
+  padding:5px 5px 5px 10px;
+  margin: 0 490px 0 490px;
+  border-left: 3px solid;
+  border-top: 0;
+  border-right: 3px solid;
+}
+}
+
+a:active {
+color: yellow;
+}
+
+.specialeffects {
+text-align: center;
+padding:20px 15px 20px 15px;
+font-size: 18px;
+padding:20px 15px 20px 15px;
+margin: 0 490px 0 490px;
+border-left: 3px solid;
+border-right: 3px solid;
+border-top: 3px solid;
+background-color: aqua;
+}
+.specialeffects:hover {
+background-color: orange;;
+color: white;

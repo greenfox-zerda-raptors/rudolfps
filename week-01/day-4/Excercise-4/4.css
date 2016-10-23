@@ -1,0 +1,28 @@
+body {
+  margin:0 500px;
+  border:
+}
+
+
+h1 {
+  font-size: 80px;
+  color: green;
+}
+h2 {
+  font-size: 45px;
+  color: green;
+}
+
+
+h3 {
+font-size: 25px;
+
+}
+h4 {
+  font-size: 50px;
+  color: green;
+  font-style: normal;
+}
+dl {
+  font-style: normal;
+  font-size: 25px;

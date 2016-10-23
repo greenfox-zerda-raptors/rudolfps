@@ -1,0 +1,32 @@
+h1 {
+  color: blue;
+  font-size: 35px;
+}
+h2 {
+
+  color: orange;
+
+}
+h3 {
+  font: normal;
+  color: orange;
+
+}
+
+
+#elso {
+  list-style-type: square;
+  color: blue;
+  font-size: 14px;
+  font-style: normal;
+
+
+}
+#fruits {
+  list-style-type: disc;
+  color: black;
+
+}
+#veggies {
+  color: black;
+}

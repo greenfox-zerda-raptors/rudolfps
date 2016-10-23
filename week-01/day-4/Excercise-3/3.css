@@ -1,0 +1,23 @@
+div {
+
+  border: 3px solid black;
+  font-size: 30px;
+padding: 20px;
+
+}
+.fruits {
+  background-color: green;
+  margin: 20px 520px;
+  border: 0;
+
+}
+
+#fruits {
+  color: blue;
+  background-color: yellow;
+}
+#veggies {
+  color: red;
+  background-color: #00D5F2;
+  
+}
