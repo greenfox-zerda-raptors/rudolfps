@@ -1,0 +1,49 @@
+.all
+{
+  width: 600px;
+  height:1000px;
+  position: relative;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.header
+{background-color: aqua;
+  height: 100px;
+  width: 600px;
+  position: absolute;
+  left: 146px;
+  top: 8px;
+}
+.orange {
+  background-color: orange;
+  height: 100px;
+  width: 100px;
+}
+.red {
+  background-color: red;
+  height: 800px;
+  width: 25%;
+  position: absolute;
+  margin-top: -1000px;
+  margin-left: 270px;}
+
+  .black
+  {background-color: black;
+    height: 100px;
+    width: 100px;}
+    .purple {
+      background-color: purple;
+      height: 800px;
+      width: 100px;
+      margin-top: -1100px;
+      margin-left: 138px;
+    }
+    .blue {
+      background-color: blue;
+      height: 100px;
+      width: 600px;
+      position: absolute;
+      left: 146px;
+      top: 900px;
+    }

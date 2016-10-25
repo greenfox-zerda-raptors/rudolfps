@@ -1,0 +1,50 @@
+
+
+
+header
+{
+  height: 100px;
+  background-color: aqua;
+}
+
+
+#atleft {
+  background-color: orange;
+  height: 300px;
+  float: left;
+  width: 15%;
+  max-width: 15%
+}
+main{
+  background-color: red;
+  width: 70%;
+  height: 300px;
+  float: left;
+  box-sizing: border-box;
+  border-right: 10px solid white;
+  border-left: 10px solid white;
+  position: relative;
+}
+#atright {
+  background-color: purple;
+  height: 300px;
+  float: right;
+  width: 15%;
+  max-width: 15%;
+}
+
+#black {
+  background-color: black;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  width: 20px;
+  height: 20px;
+}
+
+
+footer
+{
+  background-color: blue;
+  height: 100px;
+  clear: both;

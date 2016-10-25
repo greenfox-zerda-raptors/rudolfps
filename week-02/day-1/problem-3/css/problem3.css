@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+  width: 100%;
+}
+.flexcontainer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.main3{
+  flex-wrap: nowrap;
+  display: flex;
+  width: 100%;
+}
+header, footer {
+  height: 150px;
+  background-color: cyan;
+  width: 100%;
+}
+footer {
+  background-color: blue;
+}
+.atleft, main, .atright {
+  display: inline-flex;
+  justify-content: center;
+  height: 800px;
+  margin: 0 20;
+  background-color: red;
+}
+main {
+  flex-grow: 1;
+  border-left: 10px solid white;
+  border-right: 10px solid white;
+}
+.atleft, .atright {
+  width: 150px;
+  background-color: orange;
+  z-index: 1;
+  margin: 0;
+}
+.atright {
+  background-color: purple;
+}
+.black {
+  display: block;
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  position: absolute;
+  top: 800px;
+  right: 200px;
+  z-index: 0;
+}
