@@ -1,0 +1,138 @@
+html {
+  font-family: sans-serif;
+  font-size: 13px;
+  line-height: 20px;
+}
+.aside {
+  margin-left: 0;
+  flex-wrap: nowrap;
+}
+.panel ul {
+  list-style-type: none;
+  text-align: left;
+  padding-left: 15px;
+  color: blue;
+}
+.mainpage, .interaction, .tools, .print, .other, .languages{
+  border-top:1px solid rgb(216, 216, 216);
+  border-bottom:1px solid rgb(216, 216, 216);
+}
+.languages ul {
+  list-style-type: none;
+  text-align: left;
+  padding-left: 15px;
+  color: blue;
+}
+#shadow {
+  margin-top: 0;
+  margin-left: 160px;
+  height: 60px;
+  position: relative;
+  border-bottom:1px solid rgb(167, 215, 249);
+  background-color: rgb(246, 246, 246);
+}
+.two {
+  position: absolute;
+  margin-top: 35px;
+}
+.article {
+  float: left;
+  margin-left: 8px;
+}
+.talk {
+  float: left;
+}
+.search {
+  position: absolute;
+  margin-left: 540px;
+  margin-top: 35px;
+}
+.read {
+  float: right;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.edit {
+  float: right;
+  margin-left: 8px;
+}
+.view {
+  float: right;
+  margin-left: 8px;
+}
+.searchbar {
+  float: right;
+  margin-left: 8px;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+h1 {
+  margin: 0;
+  font-weight: lighter;
+  font-family: times;
+  font-size: 32px;
+}
+h2 {
+  font-size: 22px;
+  font-family: times;
+  font-weight: lighter;
+  border-bottom: 1px solid rgb(170, 170, 170);
+}
+h6 {
+  font-size: 12px;
+  font-family: arial;
+  font-weight: lighter;
+  margin: 0;
+}
+.header {
+  margin-left: 180px;
+}
+.main-content {
+  display: flex;
+  flex-direction: row;
+}
+.aside-left {
+  margin-top: -140px;
+  background-color: rgb(246, 246, 246);
+  border-right: 1px solid rgb(167, 215, 249);
+}
+.main-text {
+  background-color: : white;
+  padding: 20px;
+}
+table {
+  clear: both;
+  float: right;
+  border: 1px solid rgb(170, 170, 170);
+  background-color: rgb(249, 249, 249);
+}
+.contents {
+  width: 150px;
+  border: 1px solid rgb(170, 170, 170);
+  background-color: rgb(249, 249, 249);
+}
+.contents li {
+  color: blue;
+}
+.inaction {
+  margin-top: 20px;
+  float: right;
+  width: 222px;
+  clear: both;
+  border: 1px solid rgb(170, 170, 170);
+}
+  .book {
+    float: right;
+    width: 220px;
+    clear: both;
+    border: 1px solid rgb(170, 170, 170);
+  }
+  .sitting {
+    float: right;
+    width: 183px;
+    clear: both;
+    border: 1px solid rgb(170, 170, 170);}
