@@ -25,6 +25,7 @@ html
     height: 25px;
     text-align: center;
     padding: 5px;
+    border-radius: 5px;
 
   }
   .columns
@@ -52,13 +53,13 @@ html
   margin-top: 5px;
   width: 100%;
   height: 25px;
-  border-radius: 8%;
+  border-radius: 5px;
 }
 #year{
   margin-top: 10px;
   height: 25px;
   width: 80px;
-  border-radius: 12%;
+  border-radius: 5px;
 }
 .gender{
   position: absolute;
@@ -67,7 +68,7 @@ html
   font-size: 16px;
 }
 input[type='radio'] {
-  transform: scale(2);
+  transform: scale(1.6);
 }
 input[type='checkbox'] {
   transform: scale(1.2);}
@@ -78,22 +79,22 @@ input[type='checkbox'] {
 #phone{
   width: 300px;
   height: 25px;
-  border-radius: 8%;
+  border-radius: 5px;
 }
 #email{
   width: 300px;
   height: 25px;
-  border-radius: 8%;
+  border-radius: 5px;
 }
 #facebook{
   width: 300px;
   height: 25px;
-border-radius: 8%;
+  border-radius: 5px;
 }
 #twitter {
   width: 300px;
   height: 25px;
-  border-radius: 8%;
+  border-radius: 5px;
 }
 .checkbox{
   display: flex;
@@ -146,7 +147,7 @@ top: 30px;}
     height: 35px;
     font-family: sans-serif;
     font-size: 14px;
-    border-radius: 8%;
+    border-radius: 5px;
   }
   .save{
     float: left;
@@ -155,14 +156,14 @@ top: 30px;}
   .reset{
     float: right;
   }
-{border-radius: 1%;}
+
   #submit{
     font-size: 20px;
     width: 200px;
     height: 60px;
     color: white;
     background-color: rgba(73, 58, 92, 1.00);
-    border-radius: 5%;
+    border-radius: 5px;
   }
 
   #reset{
@@ -170,9 +171,12 @@ top: 30px;}
     width: 200px;
     height: 60px;
     background-color: rgba(248, 248, 248, 1.00);
-    border-radius: 5%;
+    border-radius: 5px;
   }
 
+textarea{
+  border-radius: 5px;
+}
   select
   {
     width: 300px;
