@@ -1,12 +1,10 @@
 /**
  * Created by gabkamabka on 2016.11.24..
  */
-    import java.awt.GridLayout;
+import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-    import java.awt.event.ComponentEvent;
-    import java.awt.event.ComponentListener;
-    import javax.swing.*;
+import javax.swing.*;
 
     public class TicTacToe extends JPanel
     {
@@ -52,6 +50,7 @@ import java.awt.event.ActionListener;
                 JButton buttonClicked2 = (JButton)e.getSource();
 
                 buttonClicked2.setIcon(norbert);
+
                 //get the particular button that was clicked
                 if(alternate%2 == 0) {
                     buttonClicked.setIcon(daggett);
@@ -117,7 +116,7 @@ import java.awt.event.ActionListener;
 
         public static void main(String[] args)
         {
-            JFrame window = new JFrame("Tic-Tac-Toe");
+            JFrame window = new JFrame("ANGRY-BEAVERS-TOE");
             window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
             window.getContentPane().add(new TicTacToe());
             window.setBounds(300,200,300,300);
