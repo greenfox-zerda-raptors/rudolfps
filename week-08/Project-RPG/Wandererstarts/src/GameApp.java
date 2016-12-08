@@ -3,13 +3,11 @@ import java.awt.*;
 import java.awt.event.KeyListener;
 
 /**
- * Created by gabkamabka on 2016.12.05..
+ * Created by gabkamabka on 2016.12.08..
  */
-public class App {
-    Board board = new Board();
+public class GameApp {
 
-
-        public static void main(String[] args) {
+        public GameApp() throws HeadlessException {
             JFrame frame = new JFrame();
             Board board = new Board();
             frame.add(board);
@@ -20,4 +18,5 @@ public class App {
             frame.setResizable(false);
         }
 }
+
 
