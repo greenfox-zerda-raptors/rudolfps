@@ -3,6 +3,6 @@
  */
 public class Boss extends GameObject {
     public Boss(int i, int j) {
-        super("sponge.png", i, j);
+        super("bossy.png", 0, 6);
     }
 }

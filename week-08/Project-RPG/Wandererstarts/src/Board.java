@@ -4,22 +4,23 @@ import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import java.util.ArrayList;
 
-import static com.sun.glass.events.KeyEvent.VK_LEFT;
-import static com.sun.glass.events.KeyEvent.VK_RIGHT;
-import static com.sun.glass.events.KeyEvent.VK_UP;
+import static com.sun.glass.events.KeyEvent.*;
 import static java.awt.event.KeyEvent.VK_DOWN;
 
 /**
  * Created by gabkamabka on 2016.12.05..
  */
-    public class Board extends JComponent implements KeyListener {
+public class Board extends JComponent implements KeyListener {
     ArrayList<GameObject> gameObjects;
 
     private Hero hero;
-    int [][] map;
+    private Skeleton skeletonFirst;
+    private Skeleton skeletonSecond;
+    private Boss boss;
+    int[][] map;
 
     public Board() {
-             map = new int[][]{
+        map = new int[][]{
                 {0, 0, 0, 1, 0, 1, 0, 0, 0, 0},
                 {0, 0, 0, 1, 0, 1, 0, 1, 1, 0},
                 {0, 1, 1, 1, 0, 1, 0, 1, 1, 0},
@@ -44,9 +45,16 @@ import static java.awt.event.KeyEvent.VK_DOWN;
                 }
             }
         }
+
+        //create characters
         hero = new Hero();
+        skeletonFirst = new Skeleton(10, 2);
+        skeletonSecond = new Skeleton(10, 6);
+        boss = new Boss(0, 6);
+
+
         // set the size of your draw board
-        setPreferredSize(new Dimension(720, 800));
+        setPreferredSize(new Dimension(600, 630));
         setVisible(true);
 
     }
@@ -58,14 +66,16 @@ import static java.awt.event.KeyEvent.VK_DOWN;
     }*/
 
 
-
-
-
     @Override
     public void paint(Graphics graphics) {
         for (GameObject gameObject : gameObjects) {
             gameObject.draw(graphics);
         }
+        ////character draw
+
+        skeletonFirst.draw(graphics);
+        skeletonSecond.draw(graphics);
+        boss.draw(graphics);
         hero.draw(graphics);
     }
 
@@ -79,16 +89,16 @@ import static java.awt.event.KeyEvent.VK_DOWN;
         int key = e.getKeyCode();
         switch (key) {
             case VK_LEFT:
-                hero.move(0, -1);
+                hero.move(-1, 0, map);
                 break;
             case VK_RIGHT:
-                hero.move(0, 1);
+                hero.move(1, 0, map);
                 break;
             case VK_UP:
-                hero.move(-1, 0);
+                hero.move(0, -1, map);
                 break;
             case VK_DOWN:
-                hero.move(1, 0);
+                hero.move(0, 1, map);
                 break;
         }
         revalidate();

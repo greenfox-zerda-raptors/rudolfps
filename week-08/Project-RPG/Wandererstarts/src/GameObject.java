@@ -25,7 +25,7 @@ public class GameObject {
 
     public void draw(Graphics graphics) {
         if (image != null) {
-            graphics.drawImage(image, posY *72, posX*72, null);
+            graphics.drawImage(image, posX *55, posY*55, 55, 55, null);
         }
     }
 }
