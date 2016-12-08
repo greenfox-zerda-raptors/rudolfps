@@ -3,6 +3,7 @@
  */
 public class Hero extends GameObject {
 
+
     public Hero() {
         super("hero-down.png", 0, 0);
     }
@@ -17,6 +18,27 @@ public class Hero extends GameObject {
             // if (posY + yPosition >= board.getHeight()) {
             //  posY += yPosition;
         }
+    }
+
+    int roll() {
+        return (int) (6.0 * Math.random()) + 1;
+    }
+
+    int d6 = roll();
+
+
+    int HP = 20 + 3 * d6;
+    int DP = 2 * d6;
+    int SP = 5 + d6;
+
+
+    @Override
+    public String toString() {
+        return "Hero:" + "HP" + HP + "    DP" + DP + "    SP" + SP;
+    }
+
+    public void battleStart() {
+
     }
 }
 

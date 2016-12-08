@@ -6,6 +6,7 @@ import java.util.ArrayList;
 
 import static com.sun.glass.events.KeyEvent.*;
 import static java.awt.event.KeyEvent.VK_DOWN;
+import static java.awt.event.KeyEvent.VK_SPACE;
 
 /**
  * Created by gabkamabka on 2016.12.05..
@@ -54,7 +55,7 @@ public class Board extends JComponent implements KeyListener {
 
 
         // set the size of your draw board
-        setPreferredSize(new Dimension(600, 630));
+        setPreferredSize(new Dimension(600, 600));
         setVisible(true);
 
     }
@@ -77,6 +78,11 @@ public class Board extends JComponent implements KeyListener {
         skeletonSecond.draw(graphics);
         boss.draw(graphics);
         hero.draw(graphics);
+
+        graphics.drawString(hero.toString(), 10, 580);
+        graphics.drawString(skeletonFirst.toString(), 200, 580);
+        graphics.drawString(skeletonSecond.toString(), 200, 600);
+        graphics.drawString(boss.toString(), 420, 580);
     }
 
     @Override
@@ -100,6 +106,8 @@ public class Board extends JComponent implements KeyListener {
             case VK_DOWN:
                 hero.move(0, 1, map);
                 break;
+            case VK_SPACE:
+                hero.battleStart();
         }
         revalidate();
         repaint();
