@@ -10,13 +10,14 @@ public class GameApp {
         JFrame frame = new JFrame();
         Board board = new Board();
         JPanel points = new JPanel();
-        points.setLocation(0, 550);
-        points.setPreferredSize(new Dimension(30, 600));
-        points.setBackground(new Color(0, 50, 255));
-        frame.add(points);
+        BoxLayout boxLayout = new BoxLayout(frame.getContentPane(), BoxLayout.Y_AXIS);
+        frame.setLayout(boxLayout);
         frame.add(board);
         frame.addKeyListener(board);
         frame.pack();
+        frame.add(points);
+        points.setPreferredSize(new Dimension(0, 65));
+        points.setBackground(new Color(180, 210, 210));
         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         frame.setVisible(true);
         frame.setResizable(false);
