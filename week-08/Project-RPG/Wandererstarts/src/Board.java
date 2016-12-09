@@ -1,4 +1,6 @@
 import javax.imageio.ImageIO;
+import javax.sound.sampled.AudioSystem;
+import javax.sound.sampled.Clip;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.KeyEvent;
@@ -119,11 +121,33 @@ public class Board extends JComponent implements KeyListener {
                 break;
             case VK_SPACE:
                 hero.battleStart();
+                break;
+            case VK_M:
+                play("Jurassic_Park_Game_Boy_Level_1_Music.wav");
+                break;
+
         }
         revalidate();
         repaint();
+    }
+
+    public static void play(String filename)
+    {
+        try
+        {
+            Clip clip = AudioSystem.getClip();
+            clip.open(AudioSystem.getAudioInputStream(new File("Jurassic_Park_Game_Boy_Level_1_Music.wav")));
+            clip.start();
+
+        }
+        catch (Exception exc)
+        {
+            exc.printStackTrace(System.out);
+        }
 
     }
+
+
     @Override
     public void keyTyped(KeyEvent e) {
     }
