@@ -1,8 +1,13 @@
+import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Random;
 
 import static com.sun.glass.events.KeyEvent.*;
 import static java.awt.event.KeyEvent.VK_DOWN;
@@ -13,12 +18,15 @@ import static java.awt.event.KeyEvent.VK_SPACE;
  */
 public class Board extends JComponent implements KeyListener {
     ArrayList<GameObject> gameObjects;
+    int[][] map;
 
     private Hero hero;
-    private Skeleton skeletonFirst;
-    private Skeleton skeletonSecond;
+    private Skeleton skeletonFirst, skeletonSecond, skeletonThird;
     private Boss boss;
-    int[][] map;
+
+    BufferedImage imageUP, imageDown, imageLeft, imageRight;
+
+
 
     public Board() {
         map = new int[][]{
@@ -35,7 +43,6 @@ public class Board extends JComponent implements KeyListener {
                 {0, 1, 0, 1, 0, 1, 0, 0, 0, 0}
         };
 
-
         gameObjects = new ArrayList<>();
         for (int i = 0; i < map.length; i++) {
             for (int j = 0; j < map[i].length; j++) {
@@ -47,25 +54,28 @@ public class Board extends JComponent implements KeyListener {
             }
         }
 
+        try {
+            imageUP = ImageIO.read(new File("hero-up.png"));
+            imageDown = ImageIO.read(new File("hero-down.png"));
+            imageRight = ImageIO.read(new File("hero-right.png"));
+            imageLeft = ImageIO.read(new File("hero-left.png"));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+
         //create characters
         hero = new Hero();
-        skeletonFirst = new Skeleton(10, 2);
-        skeletonSecond = new Skeleton(10, 6);
+        skeletonFirst = new Skeleton(10, 10, 2, false);
+        skeletonSecond = new Skeleton(10,10, 6, false );
+        skeletonThird = new Skeleton(10,5, 0, true );
         boss = new Boss(0, 6);
 
 
-        // set the size of your draw board
+        // set the size of board
         setPreferredSize(new Dimension(600, 600));
         setVisible(true);
-
     }
-
-    /*public int getWidth(){
-        return (map[0].length);
-    }public int getHeight(){
-        return (map.length);
-    }*/
-
 
     @Override
     public void paint(Graphics graphics) {
@@ -76,18 +86,15 @@ public class Board extends JComponent implements KeyListener {
 
         skeletonFirst.draw(graphics);
         skeletonSecond.draw(graphics);
+        skeletonThird.draw(graphics);
         boss.draw(graphics);
         hero.draw(graphics);
 
         graphics.drawString(hero.toString(), 10, 580);
         graphics.drawString(skeletonFirst.toString(), 200, 580);
         graphics.drawString(skeletonSecond.toString(), 200, 600);
+        graphics.drawString(skeletonThird.toString(), 200, 620);
         graphics.drawString(boss.toString(), 420, 580);
-    }
-
-    @Override
-    public void keyTyped(KeyEvent e) {
-
     }
 
     @Override
@@ -96,15 +103,19 @@ public class Board extends JComponent implements KeyListener {
         switch (key) {
             case VK_LEFT:
                 hero.move(-1, 0, map);
+                hero.setImage(imageLeft);
                 break;
             case VK_RIGHT:
                 hero.move(1, 0, map);
+                hero.setImage(imageRight);
                 break;
             case VK_UP:
                 hero.move(0, -1, map);
+                hero.setImage(imageUP);
                 break;
             case VK_DOWN:
                 hero.move(0, 1, map);
+                hero.setImage(imageDown);
                 break;
             case VK_SPACE:
                 hero.battleStart();
@@ -113,10 +124,11 @@ public class Board extends JComponent implements KeyListener {
         repaint();
 
     }
-
+    @Override
+    public void keyTyped(KeyEvent e) {
+    }
     @Override
     public void keyReleased(KeyEvent e) {
-
     }
 
 }

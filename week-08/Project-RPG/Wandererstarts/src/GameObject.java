@@ -11,9 +11,9 @@ public class GameObject {
 
     BufferedImage image;
     int posX, posY;
-    int HP, DP, SP;
+    int currentHealtPoint, currentDefendPoint, currentStrikePoint;
 
-    public GameObject(String filename, int posX, int posY) {
+    public GameObject(String filename, int posX, int posY, boolean hasTheKey) {
         this.posX = posX;
         this.posY = posY;
         try {

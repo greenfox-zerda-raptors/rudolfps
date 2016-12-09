@@ -1,11 +1,21 @@
+import java.awt.image.BufferedImage;
+
 /**
  * Created by gabkamabka on 2016.12.07..
  */
-public class Hero extends GameObject {
-
+public class Hero extends Character {
 
     public Hero() {
-        super("hero-down.png", 0, 0);
+        this("hero-down.png", 0, 0, 20, 20, 5, 1,false);
+        int d6 = roll();
+        HP += 3 * d6;
+        DP += 2 * d6;
+        SP += d6;
+        maxHP = 38;
+    }
+
+    public Hero(String filename, int posX, int posY, int HP, int maxHP, int DP, int SP, boolean hasTheKey) {
+        super(filename, posX, posY, hasTheKey);
     }
 
     public void move(int newX, int newY, int[][] map) {
@@ -21,24 +31,22 @@ public class Hero extends GameObject {
     }
 
     int roll() {
+
         return (int) (6.0 * Math.random()) + 1;
     }
-
     int d6 = roll();
 
 
-    int HP = 20 + 3 * d6;
-    int DP = 2 * d6;
-    int SP = 5 + d6;
-
-
     @Override
-    public String toString() {
-        return "Hero:" + "HP" + HP + "    DP" + DP + "    SP" + SP;
-    }
+    public String toString(){
+    return String.format("%s HP: %d/%d | DP: %d | SP: %d", getClass().getName(), HP, maxHP, DP, SP);}
 
     public void battleStart() {
 
+    }
+
+    public void setImage(BufferedImage image) {
+        this.image = image;
     }
 }
 

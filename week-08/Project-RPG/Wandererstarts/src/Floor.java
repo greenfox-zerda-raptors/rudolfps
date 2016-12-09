@@ -3,7 +3,7 @@
  */
     public class Floor extends GameObject {
         public Floor(int i, int j) {
-            super("floor.png", i, j);
+            super("floor.png", i, j, false);
         }
     }
 
