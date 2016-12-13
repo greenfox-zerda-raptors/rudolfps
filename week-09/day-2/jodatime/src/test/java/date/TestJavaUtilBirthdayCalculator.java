@@ -38,7 +38,6 @@ public final class TestJavaUtilBirthdayCalculator {
     @Test
     public void testIsAnniversaryToday() throws Exception {
         GregorianCalendar gregorianCalendar = createPreviousYearGregorianCalendar();
-
         int mounth = gregorianCalendar.get(Calendar.MONTH);
         if (mounth + 1 <= gregorianCalendar.getActualMaximum(Calendar.MONTH)) {
             ++mounth;

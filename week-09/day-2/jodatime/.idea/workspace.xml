@@ -3,13 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="4752f454-0e4e-47db-86dc-070534bb848a" name="Default" comment="setting up Gradle project">
       <change type="DELETED" beforePath="$PROJECT_DIR$/../../../week-08/Project-RPG/Wandererstarts/Jurassic_Park_Game_Boy_Level_1_Music.wav" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/date/BirthdayWithJavaUtilDate.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/date/BirthdayCalculator.class" afterPath="$PROJECT_DIR$/build/classes/main/date/BirthdayCalculator.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/date/BirthdayWithJodaTime.class" afterPath="$PROJECT_DIR$/build/classes/main/date/BirthdayWithJodaTime.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/test/date/TestJavaUtilBirthdayCalculator.class" afterPath="$PROJECT_DIR$/build/classes/test/date/TestJavaUtilBirthdayCalculator.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/test/date/TestJavaUtilDate.class" afterPath="$PROJECT_DIR$/build/classes/test/date/TestJavaUtilDate.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/test/date/TestJodaTimeBirthdayCalculator.class" afterPath="$PROJECT_DIR$/build/classes/test/date/TestJodaTimeBirthdayCalculator.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/test/guava/TestGuavaTasks.class" afterPath="$PROJECT_DIR$/build/classes/test/guava/TestGuavaTasks.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../week-08/Project-RPG/Wandererstarts/src/Board.java" afterPath="$PROJECT_DIR$/../../../week-08/Project-RPG/Wandererstarts/src/Board.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../week-08/Project-RPG/Wandererstarts/src/Character.java" afterPath="$PROJECT_DIR$/../../../week-08/Project-RPG/Wandererstarts/src/Character.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../week-08/Project-RPG/Wandererstarts/src/GameApp.java" afterPath="$PROJECT_DIR$/../../../week-08/Project-RPG/Wandererstarts/src/GameApp.java" />
@@ -18,7 +11,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../week-08/Project-RPG/Wandererstarts/src/Main.java" afterPath="$PROJECT_DIR$/../../../week-08/Project-RPG/Wandererstarts/src/Main.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/date/BirthdayWithJavaUtilDate.java" afterPath="$PROJECT_DIR$/src/main/java/date/BirthdayWithJavaUtilDate.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/date/BirthdayWithJodaTime.java" afterPath="$PROJECT_DIR$/src/main/java/date/BirthdayWithJodaTime.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/date/TestJavaUtilBirthdayCalculator.java" afterPath="$PROJECT_DIR$/src/test/java/date/TestJavaUtilBirthdayCalculator.java" />
     </list>
     <list id="1cdecc9c-3330-4077-ad6e-e9dd672d1d88" name="Rejected commit: Default" comment="setting up Gradle project" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -65,25 +58,35 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="BirthdayCalculator.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/date/BirthdayCalculator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="28" lean-forward="false" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="BirthdayWithJavaUtilDate.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/date/BirthdayWithJavaUtilDate.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="136">
-              <caret line="31" column="42" lean-forward="true" selection-start-line="31" selection-start-column="42" selection-end-line="31" selection-end-column="42" />
+              <caret line="47" column="36" lean-forward="false" selection-start-line="47" selection-start-column="36" selection-end-line="47" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1513#1514#0" expanded="true" />
-                <element signature="e#1565#1566#0" expanded="true" />
+                <element signature="e#2006#2007#0" expanded="true" />
+                <element signature="e#2058#2059#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestJavaUtilDate.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/date/TestJavaUtilDate.java">
+      <file leaf-file-name="TestJavaUtilBirthdayCalculator.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/date/TestJavaUtilBirthdayCalculator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="10" column="19" lean-forward="false" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+            <state relative-caret-position="99">
+              <caret line="62" column="0" lean-forward="false" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -440,6 +443,7 @@
         <option value="$PROJECT_DIR$/settings.gradle" />
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/main/java/date/BirthdayWithJodaTime.java" />
+        <option value="$PROJECT_DIR$/src/test/java/date/TestJavaUtilBirthdayCalculator.java" />
         <option value="$PROJECT_DIR$/src/main/java/date/BirthdayWithJavaUtilDate.java" />
       </list>
     </option>
@@ -628,27 +632,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="js.eslint.eslintPackage" value="" />
   </component>
-  <component name="RunManager" selected="JUnit.TestJavaUtilDate">
-    <configuration default="false" name="BirthdayWithJodaTime" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="date.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="date.BirthdayWithJodaTime" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="jodatime_main" />
-      <envs />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.TestJavaUtilBirthdayCalculator.testCalculateAgeInYears">
     <configuration default="false" name="TestJavaUtilBirthdayCalculator" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -661,32 +645,6 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="date" />
       <option name="MAIN_CLASS_NAME" value="date.TestJavaUtilBirthdayCalculator" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="TestJodaTimeBirthdayCalculator" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="date.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="jodatime_test" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="date" />
-      <option name="MAIN_CLASS_NAME" value="date.TestJodaTimeBirthdayCalculator" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -721,7 +679,7 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="false" name="TestJavaUtilDate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="TestJavaUtilBirthdayCalculator.testParseDate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="date.*" />
@@ -732,9 +690,61 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="date" />
-      <option name="MAIN_CLASS_NAME" value="date.TestJavaUtilDate" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="date.TestJavaUtilBirthdayCalculator" />
+      <option name="METHOD_NAME" value="testParseDate" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="TestJavaUtilBirthdayCalculator.testIsAnniversaryToday" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="date.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="jodatime_test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="date" />
+      <option name="MAIN_CLASS_NAME" value="date.TestJavaUtilBirthdayCalculator" />
+      <option name="METHOD_NAME" value="testIsAnniversaryToday" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="TestJavaUtilBirthdayCalculator.testCalculateAgeInYears" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="date.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="jodatime_test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="date" />
+      <option name="MAIN_CLASS_NAME" value="date.TestJavaUtilBirthdayCalculator" />
+      <option name="METHOD_NAME" value="testCalculateAgeInYears" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
@@ -1121,19 +1131,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.BirthdayWithJodaTime" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.TestJavaUtilBirthdayCalculator" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.TestJodaTimeBirthdayCalculator" />
-      <item index="3" class="java.lang.String" itemvalue="Application.BirthdayWithJavaUtilDate" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.TestJavaUtilDate" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.TestJavaUtilBirthdayCalculator" />
+      <item index="1" class="java.lang.String" itemvalue="Application.BirthdayWithJavaUtilDate" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.TestJavaUtilBirthdayCalculator.testParseDate" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.TestJavaUtilBirthdayCalculator.testIsAnniversaryToday" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.TestJavaUtilBirthdayCalculator.testCalculateAgeInYears" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.TestJavaUtilDate" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.TestJavaUtilBirthdayCalculator.testCalculateAgeInYears" />
         <item index="1" class="java.lang.String" itemvalue="JUnit.TestJavaUtilBirthdayCalculator" />
         <item index="2" class="java.lang.String" itemvalue="Application.BirthdayWithJavaUtilDate" />
-        <item index="3" class="java.lang.String" itemvalue="Application.BirthdayWithJodaTime" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.TestJodaTimeBirthdayCalculator" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.TestJavaUtilBirthdayCalculator.testIsAnniversaryToday" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.TestJavaUtilBirthdayCalculator.testParseDate" />
       </list>
     </recent_temporary>
   </component>
@@ -1147,32 +1157,44 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1481619820753</updated>
-      <workItem from="1481619825786" duration="7066000" />
+      <workItem from="1481619825786" duration="15612000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestJavaUtilBirthdayCalculator - 2016.12.13 at 10h 41m 25s.xml">
+    <history-entry file="TestJavaUtilBirthdayCalculator - 2016.12.13 at 14h 13m 52s.xml">
       <configuration name="TestJavaUtilBirthdayCalculator" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestJavaUtilBirthdayCalculator - 2016.12.13 at 11h 18m 06s.xml">
+    <history-entry file="TestJavaUtilBirthdayCalculator - 2016.12.13 at 14h 39m 32s.xml">
       <configuration name="TestJavaUtilBirthdayCalculator" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestJavaUtilBirthdayCalculator - 2016.12.13 at 12h 01m 11s.xml">
+    <history-entry file="TestJavaUtilBirthdayCalculator - 2016.12.13 at 14h 52m 17s.xml">
       <configuration name="TestJavaUtilBirthdayCalculator" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestJavaUtilDate - 2016.12.13 at 11h 23m 02s.xml">
-      <configuration name="TestJavaUtilDate" configurationId="JUnit" />
+    <history-entry file="TestJavaUtilBirthdayCalculator - 2016.12.13 at 14h 54m 08s.xml">
+      <configuration name="TestJavaUtilBirthdayCalculator" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestJodaTimeBirthdayCalculator - 2016.12.13 at 10h 41m 57s.xml">
-      <configuration name="TestJodaTimeBirthdayCalculator" configurationId="JUnit" />
+    <history-entry file="TestJavaUtilBirthdayCalculator - 2016.12.13 at 15h 07m 45s.xml">
+      <configuration name="TestJavaUtilBirthdayCalculator" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestJodaTimeBirthdayCalculator - 2016.12.13 at 10h 48m 28s.xml">
-      <configuration name="TestJodaTimeBirthdayCalculator" configurationId="JUnit" />
+    <history-entry file="TestJavaUtilBirthdayCalculator - 2016.12.13 at 15h 12m 14s.xml">
+      <configuration name="TestJavaUtilBirthdayCalculator" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestJavaUtilBirthdayCalculator_testCalculateAgeInYears - 2016.12.13 at 14h 59m 19s.xml">
+      <configuration name="TestJavaUtilBirthdayCalculator.testCalculateAgeInYears" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestJavaUtilBirthdayCalculator_testCalculateAgeInYears - 2016.12.13 at 15h 17m 40s.xml">
+      <configuration name="TestJavaUtilBirthdayCalculator.testCalculateAgeInYears" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestJavaUtilBirthdayCalculator_testIsAnniversaryToday - 2016.12.13 at 13h 37m 02s.xml">
+      <configuration name="TestJavaUtilBirthdayCalculator.testIsAnniversaryToday" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestJavaUtilBirthdayCalculator_testIsAnniversaryToday - 2016.12.13 at 13h 38m 25s.xml">
+      <configuration name="TestJavaUtilBirthdayCalculator.testIsAnniversaryToday" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7066000" />
+    <option name="totallyTimeSpent" value="15612000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -1198,14 +1220,14 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3993174" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3993174" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32935154" sideWeight="0.4969743" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32935154" sideWeight="0.49092284" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32935154" sideWeight="0.4969743" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32935154" sideWeight="0.49394855" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32935154" sideWeight="0.49394855" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32935154" sideWeight="0.49394855" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1230,7 +1252,9 @@
     <option name="LAST_COMMIT_MESSAGE" value="setting up Gradle project" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="4" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="antWorkspaceConfiguration">
@@ -1264,14 +1288,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/settings.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/src.zip!/java/text/DateFormat.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="121">
@@ -1280,10 +1296,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/date/TestJavaUtilDate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="20" column="17" lean-forward="true" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/settings.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/date/TestJavaUtilBirthdayCalculator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="22" column="33" lean-forward="true" selection-start-line="21" selection-start-column="8" selection-end-line="23" selection-end-column="69" />
+        <state relative-caret-position="99">
+          <caret line="62" column="0" lean-forward="false" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1291,19 +1323,19 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/date/BirthdayWithJavaUtilDate.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
-          <caret line="31" column="42" lean-forward="true" selection-start-line="31" selection-start-column="42" selection-end-line="31" selection-end-column="42" />
+          <caret line="47" column="36" lean-forward="false" selection-start-line="47" selection-start-column="36" selection-end-line="47" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1513#1514#0" expanded="true" />
-            <element signature="e#1565#1566#0" expanded="true" />
+            <element signature="e#2006#2007#0" expanded="true" />
+            <element signature="e#2058#2059#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/date/TestJavaUtilDate.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/date/BirthdayCalculator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="10" column="19" lean-forward="false" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+        <state relative-caret-position="34">
+          <caret line="2" column="28" lean-forward="false" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
           <folding />
         </state>
       </provider>
