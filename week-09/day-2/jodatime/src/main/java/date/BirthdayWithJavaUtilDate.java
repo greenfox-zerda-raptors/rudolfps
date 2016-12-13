@@ -3,10 +3,11 @@ package date;
 import java.text.DateFormat;
 import java.text.Format;
 import java.text.SimpleDateFormat;
-import java.time.LocalDate;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.Scanner;
+import java.util.concurrent.TimeUnit;
+
 
 public final class BirthdayWithJavaUtilDate implements BirthdayCalculator<Date> {
     @Override
@@ -32,10 +33,7 @@ public final class BirthdayWithJavaUtilDate implements BirthdayCalculator<Date> 
     @Override
     public boolean isAnniversaryToday(Date date) {
         // TODO - return with true if today is the same month+day as date
-       // DateFormat dateFormat = new SimpleDateFormat("MM. dd.");
         Date dateCurrent = new Date();
-      // dateFormat.format(dateCurrent);
-      //  date.compareTo(dateCurrent) == 0;
         if (printMonthAndDay(date).equals (printMonthAndDay(dateCurrent))) {
             return true;
         }
@@ -44,19 +42,40 @@ public final class BirthdayWithJavaUtilDate implements BirthdayCalculator<Date> 
     @Override
     public int calculateAgeInYears(Date birthday) {
         // TODO - return how many years age the input date 'birthday' was
-        Date now = new Date();
-        long timeBetween = birthday.getTime() - now.getTime();
+       /*  Date now = new Date();
+      long timeBetween = birthday.getTime() - now.getTime();
         double yearsBetween = timeBetween / 3.15576e+10;
         int age = (int) Math.floor(yearsBetween);
 
-        return age;
+        return age;*/
+        if (birthday == null) {
+            return 0;
+        }
+        Calendar cal1 = Calendar.getInstance();
+        cal1.setTime(birthday);
+        Calendar cal2 = Calendar.getInstance();
+        int i = 0;
+        while (cal1.before(cal2)) {
+            cal1.add(Calendar.YEAR, 1);
+            i += 1;
+        }
+        return i;
     }
+
 
     @Override
     public int calculateDaysToNextAnniversary(Date date) {
         // TODO - the number of days remaining to the next anniversary of 'date' (e.g. if tomorrow, return 1)
-        return -1;
+        Date today = Calendar.getInstance().getTime();
+        date.setYear(today.getYear());
+        if (!date.after(today)) {
+            date.setYear(date.getYear()+1);
+        }
+        long diff = date.getTime() - today.getTime();
+        return (int) TimeUnit.DAYS.convert(diff, TimeUnit.MILLISECONDS);
     }
+
+
     public static void main(String[] args) {
         new BirthdayWithJavaUtilDate().run();
     }
