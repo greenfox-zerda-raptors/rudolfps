@@ -5,46 +5,31 @@ import org.h2.engine.Database;
 /**
  * Created by gabkamabka on 2016.12.14..
  */
-@DatabaseTable(tableName = "address")
+@DatabaseTable
 public class Address {
-
-    @DatabaseField(id = true)
-    private String idForAddress;
+    @DatabaseField(generatedId = true)
+    private int id;
     @DatabaseField
-    private String country;
+    private String street;
     @DatabaseField
     private String city;
     @DatabaseField
-    private String street;
+    private int postcode;
+    @DatabaseField
+    private String country;
 
     public Address() {
     }
 
-    public Address(String idForAddress, String country, String city, String street) {
-        this.idForAddress = idForAddress;
-        this.country = country;
-        this.city = city;
+    public Address(String street, String city, int postcode, String country) {
         this.street = street;
+        this.city = city;
+        this.postcode = postcode;
+        this.country = country;
     }
-
-    public String getIdForAddress() {  return idForAddress;}
-    public void setIdForAddress(String idForAddress) {  this.idForAddress = idForAddress;}
-    public String getCountry() {return country;}
-    public void setCountry(String country) { this.country = country;}
-    public String getCity() { return city; }
-    public void setCity(String city) {this.city = city; }
-    public String getStreet() {   return street;}
-    public void setStreet(String street) { this.street = street; }
-
 
     @Override
     public String toString() {
-        return "Address{" +
-                "idForAddress='" + idForAddress + '\'' +
-                ", country='" + country + '\'' +
-                ", city='" + city + '\'' +
-                ", street='" + street + '\'' +
-                '}';
+        return String.format("{\npostcode = %d\ncity = %s\ncountry = %s\nstreet = %s\n}", postcode, city, country, street);
     }
-
 }

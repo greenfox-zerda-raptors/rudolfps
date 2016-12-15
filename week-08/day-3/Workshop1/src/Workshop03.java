@@ -20,37 +20,20 @@ public class Workshop03 {
             TableUtils.createTableIfNotExists(connectionSource, Account.class);
             TableUtils.createTableIfNotExists(connectionSource, Address.class);
 
-            Dao<Account, String> accountDao =
-                    DaoManager.createDao(connectionSource, Account.class);
+            Dao<Account, String> accountDao = DaoManager.createDao(connectionSource, Account.class);
 
-            Dao<Address, String> addressDao =
-                    DaoManager.createDao(connectionSource, Address.class);
-
-
-            Account account = new Account("Captain America", "uejnsd632**234.");
+            Account account = new Account("Captain America", "uejnsd632**234.",
+                    new Address("Szabadsag", "Arokto", 3467, "Hungary"));
             createAccountIfNotExists(accountDao, account);
 
             account = accountDao.queryForId("Captain America");
             System.out.println("Account: " + account.toString());
-
-            Address address = new Address("1", "Hungary", "Miskolc", "Petőfi");
-            createAddressIfNotExists(addressDao, address);
-
-            address = addressDao.queryForId("1");
-            System.out.println("Address " + address.toString());
-
-
         }
 
         private static void createAccountIfNotExists(Dao<Account, String> accountDao, Account acc) throws SQLException {
-            if (accountDao.queryForId(acc.getName()) == null) {
+            if(accountDao.queryForId(acc.getName()) == null) {
                 accountDao.create(acc);
             }
         }
-
-        private static void createAddressIfNotExists(Dao<Address, String> addressDao, Address add) throws SQLException {
-            if (addressDao.queryForId(add.getIdForAddress()) == null) {
-                addressDao.create(add);
-            }
-        }
     }
+
