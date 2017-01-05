@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html layout:decorator="layout" xmlns:layout="http://www.w3.org/1999/xhtml" xmlns:th="http://www.w3.org/1999/xhtml">
+
+<div class="content" layout:fragment="content">
+
+    <a class="btn btn-primary" href="/posts/add">Create a new post</a>
+    <a class="btn btn-primary" href="/posts/sort">sort by Score</a>
+
+    <table class="table table-striped" id="posts_list">
+        <thead>
+        <tr>
+            <th>Post ID</th>
+            <th>SCORE</th>
+            <th>Author</th>
+            <th>Title</th>
+
+            <th>Content</th>
+
+            <th>upvote</th>
+            <th>downvote</th>
+
+            <th>Edit</th>
+            <th>Delete</th>
+
+
+
+
+        </tr>
+        </thead>
+
+
+        <tbody>
+
+        <tr th:each="post : ${posts}">
+            <td class="id" th:text="${post.getId()}"></td>
+            <td class="score" th:text="${post.getScore()}"></td>
+            <td class="author" th:text="${post.getAuthor()}"></td>
+            <td class="title" th:text="${post.getTitle()}"></td>
+            <td class="content" th:text="${post.getContent()}"></td>
+
+
+            <td>
+                <a th:href="@{'/posts/{id}/upvote'(id=${post.id})}" class="upvote">
+                        <span class="fa-stack">
+                            <i class="glyphicon glyphicon-plus"></i>
+                        </span>
+                </a>
+            </td>
+
+            <td>
+                <a th:href="@{'/posts/{id}/downvote'(id=${post.id})}" class="downvote">
+                        <span class="fa-stack">
+                            <i class="glyphicon glyphicon-minus"></i>
+                        </span>
+                </a>
+            </td>
+
+
+            <td>
+                <a th:href="@{'/posts/{id}/edit'(id=${post.id})}" class="edit" th:attr="author=${post.author}">
+                    <span class="fa-stack">
+                        <i class="glyphicon glyphicon-edit"></i>
+                    </span>
+
+                </a>
+            </td>
+
+            <td>
+                <a th:href="@{'/posts/{id}/delete'(id=${post.id})}" class="delete" th:attr="author=${post.author}">
+                        <span class="fa-stack">
+                            <i class="glyphicon glyphicon-trash"></i>
+                        </span>
+                </a>
+            </td>
+
+
+        </tr>
+
+        </tbody>
+
+
+
+    </table>
+</div>
+</html>

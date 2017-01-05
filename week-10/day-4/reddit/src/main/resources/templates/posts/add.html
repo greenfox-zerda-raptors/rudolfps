@@ -1,0 +1,19 @@
+<html layout:decorator="layout" xmlns:layout="http://www.w3.org/1999/xhtml">
+<div layout:fragment="content">
+
+    <form method="post" author="comment_form" id="comment_form" action="/posts/add" role="form">
+        <div class="form-group">
+            <label for="message">Author</label>
+            <textarea rows="1" class="form-control" id="author" author="author"/>
+
+            <label for="message">Title</label>
+            <textarea rows="1" class="form-control" id="title" author="title"/>
+
+            <label for="message">Post</label>
+            <textarea rows="5" class="form-control" id="content" author="content"/>
+
+        </div>
+        <button type="submit" id="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+</html>
