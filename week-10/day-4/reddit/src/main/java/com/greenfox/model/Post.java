@@ -1,6 +1,6 @@
 package com.greenfox.model;
 
-import lombok.ToString;
+import lombok.Data;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -12,22 +12,19 @@ import javax.persistence.Id;
  */
 
     @Entity (name = "posts")
-    @ToString
+    @Data
     public class Post {
 
         @Id
         @GeneratedValue(strategy = GenerationType.AUTO)
         private long id;
-
-
         private String author;
         private String content;
-        private int score;
-        private String title;
+        public int score;
+        private String    title;
 
 
-        public Post(){
-
+    public Post(){
         }
 
         public Post(String title, String author, String content){
@@ -42,47 +39,6 @@ import javax.persistence.Id;
 
         public void decrement(){
             score--;
-        }
-
-
-        public long getId() {
-            return id;
-        }
-
-        public void setId(long id) {
-            this.id = id;
-        }
-
-        public String getAuthor() {
-            return author;
-        }
-
-        public void setAuthor(String author) {
-            this.author = author;
-        }
-
-        public String getContent() {
-            return content;
-        }
-
-        public void setContent(String content) {
-            this.content = content;
-        }
-
-        public int getScore() {
-            return score;
-        }
-
-        public void setScore(int score) {
-            this.score = score;
-        }
-
-        public String getTitle() {
-            return title;
-        }
-
-        public void setTitle(String title) {
-            this.title = title;
         }
     }
 

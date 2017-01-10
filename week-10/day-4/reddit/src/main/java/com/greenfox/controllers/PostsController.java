@@ -1,7 +1,6 @@
 package com.greenfox.controllers;
 import com.greenfox.model.Post;
-import com.greenfox.repositories.PostRepository;
-
+import com.greenfox.services.PostService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -12,75 +11,59 @@ import org.springframework.web.servlet.ModelAndView;
  * Created by rudolfps on 2017.01.04..
  */
 @Controller
-@RequestMapping ("/posts")
+@RequestMapping("/posts")
 public class PostsController {
 
     @Autowired
-    private PostRepository repository;
+    private PostService service;
 
     @RequestMapping(value = "", method = RequestMethod.GET)
     public String listPosts(Model model){
-        model.addAttribute("posts", repository.findAll());
+        model.addAttribute("posts", service.getPostSorted());
+
         return "posts/post";
     }
 
-
     @RequestMapping(value = "/{id}/delete", method = RequestMethod.GET)
     public ModelAndView delete(@PathVariable long id) {
-        repository.delete(id);
+        service.delete(id);
         return new ModelAndView("redirect:/posts");
     }
 
-
-
-    @GetMapping("/add")
-    public String createPosts(Model model) {
+    @GetMapping("/new")
+    public String createNewPost(Model model) {
         model.addAttribute("post", new Post());
-        return "posts/add";
+        return "posts/new";
     }
 
-
-    @PostMapping(value = "/add")
-    public String addPosts(@ModelAttribute Post post){
-        repository.save(post);
+    @PostMapping("/new")
+    public String addNewPost(@ModelAttribute Post post){
+        service.save(post);
         return "redirect:/posts";
     }
 
-
-    @GetMapping(value = "/{id}/edit")
-    public String edit(@PathVariable long id,
-                       Model model) {
-        Post post = repository.findOne(id);
-        model.addAttribute("post", post);
+    @GetMapping("{id}/edit")
+    public String editPost(@PathVariable long id, Model model) {
+        model.addAttribute("post", service.findAPost(id));
         return "posts/edit";
     }
 
-
-
-    @PostMapping(value = "/update")
-    public ModelAndView update(@RequestParam("post_id") long id,
-                               @RequestParam("content") String content) {
-        Post post = repository.findOne(id);
-        post.setContent(content);
-        repository.save(post);
-        return new ModelAndView("redirect:/posts");
-    }
-
-
-
-    @RequestMapping(value = "/{id}/upvote")
-    public String upVote(@PathVariable("id") long id) {
-        Post post = repository.findOne(id);
-        post.increment();
-        repository.save(post);
+    @PostMapping("/edit")
+    public String addEditedPost(@ModelAttribute Post post) {
+        System.out.println(post.getId());
+        service.save(post);
         return "redirect:/posts";
     }
 
-    @RequestMapping(value = "/{id}/downvote")
-    public String downVote(@PathVariable("id") long id) {
-        Post post = repository.findOne(id);
-        post.decrement();
-        repository.save(post);
+    @RequestMapping("{id}/upvote")
+    public String upvote(@PathVariable long id) {
+        service.upvote(id);
+        return "redirect:/posts";
+    }
+
+    @RequestMapping("{id}/downvote")
+    public String downvote(@PathVariable long id) {
+        service.downvote(id);
         return "redirect:/posts";
     }
 
