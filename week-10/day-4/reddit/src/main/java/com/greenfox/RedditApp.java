@@ -1,6 +1,6 @@
 package com.greenfox;
-import com.greenfox.model.Post;
 
+import com.greenfox.model.Post;
 import com.greenfox.repositories.PostRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
@@ -30,7 +30,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 			repository.save(new Post("Top 10 Hidden Images Found In Cartoons", "LISTVERSE STAFF", "http://listverse.com/2009/05/10/top-10-hidden-images-found-in-cartoons/" ));
 			repository.save(new Post("10 Craziest Living Things Swallowed By Sharks", "JANE TAYLOR ", "http://listverse.com/2017/01/04/10-craziest-living-things-swallowed-by-sharks/" ));
 			repository.save(new Post("10 Truly Disgusting Facts About Ancient Greek Life", "MARK OLIVER", "http://listverse.com/2017/01/03/10-disgusting-facts-about-ancient-greek-life/" ));
-		}
+}
 
 }
 

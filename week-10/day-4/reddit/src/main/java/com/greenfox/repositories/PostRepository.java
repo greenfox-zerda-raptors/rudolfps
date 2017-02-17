@@ -1,6 +1,5 @@
 package com.greenfox.repositories;
 import com.greenfox.model.Post;
-
 import org.springframework.data.repository.CrudRepository;
 
 import java.util.List;

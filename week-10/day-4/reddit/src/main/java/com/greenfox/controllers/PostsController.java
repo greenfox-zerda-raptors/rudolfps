@@ -1,6 +1,6 @@
 package com.greenfox.controllers;
-import com.greenfox.model.Post;
 import com.greenfox.services.PostService;
+import com.greenfox.model.Post;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -30,16 +30,21 @@ public class PostsController {
         return new ModelAndView("redirect:/posts");
     }
 
-    @GetMapping("/new")
+    @GetMapping("/add")
     public String createNewPost(Model model) {
         model.addAttribute("post", new Post());
-        return "posts/new";
+        return "posts/add";
     }
 
-    @PostMapping("/new")
+    @PostMapping("/add")
     public String addNewPost(@ModelAttribute Post post){
         service.save(post);
         return "redirect:/posts";
+    }
+    @GetMapping("/thankyou")
+    public String thankyou(Model model) {
+        model.addAttribute("thankyou", new Post());
+        return "posts/thankyou";
     }
 
     @GetMapping("{id}/edit")
